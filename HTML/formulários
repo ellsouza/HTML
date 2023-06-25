@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <header>
+    <h1>Formulário em HTML</h1>
+    <hr>
+  </header>
+  <main>
+    <br>
+    <form action="" method="get">
+      <div>
+        <label for="text">Nome:</label>
+      <input type="text" id="text" placeholder="Informe seu nome..." name="nome">
+      </div>
+      <br>
+       <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id"email"name="email" placeholder="Informe seu email...">         
+      </div>  
+      <br>
+      <div>
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha"placeholder="Informe sua senha..." name="senha">
+      </div>
+      <br>
+      <div>
+        <label for="date">Informe a data do seu nascimento:</label>
+        <input type="date" id="date"name="date">
+      </div> 
+      <br>
+      <div>
+      <label type="hour">Hora</label>
+      <input type="time" id="hour" name="hour">
+      </div>
+      <br>
+      <div>
+        <label for="number">Números:</label>
+        <input type="number" id="number" name="number">
+      </div>
+      <br>
+      <div>
+        <label for="file">Deposite seu arquivo:</label>
+        <input type="file" id="file" name="file">
+      </div>
+      <br>
+      <div>
+        <label for="url">Informe a URL:</label>
+        <input type="url" id="url" name="url">
+      </div>
+      <br>
+      <div>
+        <label for="color">Escolha a cor:</label>
+        <input type="color" id="color" name="color">
+      </div>
+      <br> 
+      <div>
+        <label for="range">Qual o seu nível de satisfação?</label>
+          <input type="range" id="range" name="range" value="100">       
+      </div>
+      <br>
+      <div>
+        <label for="checkbox">Deseja receber informações via e-mail?</label>
+        <input type="checkbox" id="checkbox" name="checkbox" checked>
+      <br>
+        <label for="checkbox">Deseja aceitar os termos e condições do site?</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+      <div>
+        <br>
+      <div>
+        <p>Está satisfeito com o atendimento?        </p>
+          <label for="radio">Satisfeito.</label>
+          <input type="radio" id="radio" name="radio">
+        <br>
+         <label for="radio">Razoável.</label>
+          <input type="radio" id="radio" name="radio">
+        <br>
+         <label for="radio">Insatisfeito.</label>
+          <input type="radio" id="radio" name="radio">
+      </div>
+        <br>
+      <div>
+        <label for="reset">Deseja limpar os dados marcados?</label>
+        <input type="reset" id="reset" name="reset" value="Limpar">
+      </div>
+        <br>
+        <p>O que você achou da sua experiência no nosso Formulário? Há alguma sugestão? Digite abaixo sua resposta! &#128522</p>
+           <textarea name="bio" id="bio" cols="" rows=""></textarea>
+        <br>
+        <select nome="" id="">
+          <option value="" disabled selected>Selecione uma opção</option> 
+          <option value="rh">Departamento de RH</option>
+          <option value="mkt">Departamento de Marketing</option> 
+          <option value="ti">Departamento de TI</option>
+        </select>
+        </div>
+        <br>
+      <div>
+        <label for="submit"></label>
+        <input type="submit" id="submit" name="submit">
+        <br> 
+    </form>
+  </main>
+</body>
+</html>
+
+<!-- tag <form> para: criar formulário] --!>
+<!--<form action="" method="post" = O atributo action define o local (uma URL) em que os dados recolhidos do formulário devem ser enviados e o atributo method define qual o método HTTP para enviar os dados (ele pode ser "GET" ou "POST" >
+ --!>
+<!-- tag <input> para: entrada--!>
+<!-- tag <label> para: mostrar a que se refere o input--!>
+<!--atributo "placeholder" na tag <input> para escrever uma sugestão do que digitar --!>
+<!-- atributo "value" na tag <input> para: definir um texto já como valor inicial, ex: value="ellen" --!>
+<!-- atributo "name" na tag <input> para:  --!>
+<!--<input type="password">
+ para: criar campo de senha--!>
+<!--<input type="email" name="email"> para: criar campo de e-mail --!>
+<!--  <input type="date"> para criar campo de data --!>
+<!--<input type="time" para: criar campo de tempo--!>
+<!-- <input type="number" para: campo numerico--!>
+<!-- <input type="file" para: criar campo de arquivo--!>
+<!-- <input type="url" para: informar URL--!>
+<!-- <input type="color" para: escolher a cor--!>
+<!-- <input type="range" para: criar uma barra onde você pode alterar--!>
+<!-- <input type="checkbox" para: criar caixinha de seleção, podemos utilizar também: <input type="checkbox" checked> já vem marcado, o checkbox permite multiplas marcações--!>
+<!-- <input type="radio" para: criar uma caixinha de seleção também, porém essa só permite uma marcação--!>
+<!-- <input type="reset" para: limpar os dados informados no formulário, podemos alterar o nome do botão "restaurar" com o atributo value--!>
+<!-- <textarea> uma caixa de texto, sendo:cols= o número de colunas, no caso, a quantidade de letras e rows o númeor de linhas, quantas linhas podemos ocupar, por padrão, é dimensionável--!>
+<!--<input type="submit" para: enviar os dados, podemos alterar o nome do botão também com o atributo value--!>
+<!-- tag <select nome="" id=""> seguida por <option value=""> para criar uma caixa de seleção e suas opções, além disso, "desabled" para desativar uma option e "selected" para iniciar selecionada--!> 
