@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /*  box-sizing: border-box para preservar as dimensões da caixa, assim podemos utilizar padding sem o mesmo modificar o tamanho da caixa */
+}
+:root{
+    font-size: 62.5%;
+}
+table, td, th {
+    font-size: 2.4rem;
+    border: 1px solid black;
+    /* border-collapse: separate;  */
+    /* estiização de borda */
+}
+p, ul, ol{
+    font-size: 2.0rem;
+}
+h1{
+    font-size: 3.0rem;
+    text-align: center;
+}
+
+th{ 
+    background-color: steelblue;
+    color:#fff;
+}
+table tr:nth-child(2n + 1){
+    /* nth-child serve para criar qualquer regra */
+    /* first-child para a primeira linha */
+    background-color:blueviolet;
+}
+ul, ol{
+    padding-left: 3.2rem;
+}
+ul{
+    list-style:circle;
+    /* escolhendo o estilo de marcador da lista */
+    /* list-style:none para retirar marcadores */
+}
+ol{
+    list-style:upper-roman;
+}
+.box{
+    height:10rem;
+    width: 20rem;
+    margin: 1.5rem; /* cria um espaço externo dos 4 lados, tua fora do elemento*/
+    padding: 1.5rem; /*distancia entre o conteúdo e as bordas, atua dentro do elemento*/
+    background-color: rosybrown;
+    color:#fff;
+    border: 10px solid black;
+    display:inline-block; 
+    /* o display inline block permite adequar os elementos sem bloquear o espaço */
+    /* usar somente o display-inline não é viável nesse caso, pois ele não respeita as dimensões */
+    border-radius: 4rem; /*arredonda as bordas*/
+    /* display:none para não visualizar o elemento*/
+}
+img{
+    height: 10rem;
+    width: 50rem;
+    object-fit: cover; /* para melhorar a imagem */
+    /*a img por padrão já é inline  */
+}
